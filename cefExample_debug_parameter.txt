@@ -1,0 +1,15 @@
+below method is verified in win10+VS2017 platform.
+
+1. run run_setupCefExample.bat to setup cef office example.
+2. open cef-project\build\cef.sln with VS2017
+3. config cefclient project
+3.1 debug parameter :
+    --renderer-startup-dialog --no-sandbox --enable-logging --v=1 
+    --renderer-startup-dialog --no-sandbox --enable-logging --v=1 --url=file:///D:/work/.../cef_js_int.html
+3.2 disable below preprocessor definition:
+    CEF_USE_SANDBOX
+4. rebuild cefclient project.
+5. F5 to debug cefclient project.
+
+symbol server:
+https://chromium-browser-symsrv.commondatastorage.googleapis.com
